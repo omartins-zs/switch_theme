@@ -14,3 +14,18 @@
     --trans-timing: cubic-bezier(0.83, 0, 0.17, 1);
     font-size: calc(48px + (72 - 48) * (100vw - 320px) / (2560 - 320));
 }
+
+body,
+input {
+    font: 1em/1.5 sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    height: 100vh;
+    transition:
+        background-color var(--trans-dur),
+        color var(--trans-dur);
+}
